@@ -5,11 +5,10 @@
 <table class="table table-bordered">
 	<thead>
 		<tr>
-			<th>#</th>
+			<th>Codigo</th>
 			<th>Nombre</th>
 			
 		</tr>
-
 	</thead>
 
 	<tbody>
@@ -18,13 +17,13 @@
 
 		<tr>
 		
-		<td>{{municipio.id}}</td>
+		<td>{{municipio.codigo}}</td>
 		<td>{{municipio.nombre}}</td>
 				
 		<td>
-			<a class="btn btn-primary" href="{%url 'municipio:municipio_editar' municipio.id%}">Editar</a>
+			<a class="btn btn-primary" href="{%url 'municipio:municipio_editar' municipio.codigo%}">Editar</a>
 
-			<a class="btn btn-danger" href="{%url 'municipio:municipio_eliminar' municipio.id%}">Eliminar</a>
+			<a class="btn btn-danger" href="{%url 'municipio:municipio_eliminar' municipio.codigo%}">Eliminar</a>
 
 			<a class="btn btn-default" href="{%url 'municipio:municipio_crear'%}">Nuevo</a>
 		</td>
