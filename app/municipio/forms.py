@@ -8,18 +8,20 @@ class MunicipioForm(forms.ModelForm):
 		model = Municipio
 
 		fields = [
+		'codigo',
 		'nombre',
 		#'departamento',
 			]
 
 		labels= {
-
+		'codigo': 'Codigo',
 		'nombre': 'Nombre',
 		#'departamento': 'Departamento',
 		
 		}
 
 		widgets= {
+        'codigo': forms.TextInput(attrs={'class':'form-control'}),
         'nombre': forms.TextInput(attrs={'class':'form-control'}),
-		#'departamento': forms.Select(attrs={'class':'form-control'}),
+        #'departamento': forms.Select(attrs={'class':'form-control'}),
 		}
